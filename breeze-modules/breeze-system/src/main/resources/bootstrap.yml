@@ -1,0 +1,26 @@
+# Tomcat
+server:
+  port: 9201
+
+# Spring
+spring: 
+  application:
+    # 应用名称
+    name: breeze-system
+  profiles:
+    # 环境配置
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: http://47.101.47.218:8848
+        # 命名空间
+        namespace: ea753128-edd6-41dc-9d81-fbdbb2fde2b0
+      config:
+        # 配置中心地址
+        server-addr: 47.101.47.218:8848
+        # 命名空间
+        namespace: ea753128-edd6-41dc-9d81-fbdbb2fde2b0
+        # 配置文件格式
+        file-extension: yaml
