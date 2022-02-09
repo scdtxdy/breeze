@@ -4,33 +4,24 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.breeze</groupId>
-        <artifactId>breeze-modules</artifactId>
+        <artifactId>breeze-common</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <groupId>com.breeze</groupId>
-    <artifactId>breeze-system</artifactId>
-
-    <name>breeze-system</name>
-    <description>breeze-system</description>
+    <artifactId>breeze-common-core</artifactId>
+    <description>breeze-common-core</description>
 
     <dependencies>
-        <!-- SpringBoot Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-        <!-- SpringCloud Alibaba Nacos -->
         <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-
-        <!-- SpringCloud Alibaba Nacos Config -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
