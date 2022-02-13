@@ -16,6 +16,7 @@
 
     <modules>
         <module>breeze-common-core</module>
+        <module>breeze-commom-datasource</module>
     </modules>
 
 
