@@ -1,2 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-    com.breeze.commom.datasource.config.MyBatisPlusConfig
+  com.breeze.commom.datasource.config.MyBatisPlusConfig,\
+  com.breeze.commom.datasource.config.env.ApplicationSeataInitializer
+

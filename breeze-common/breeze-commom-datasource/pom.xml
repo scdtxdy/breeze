@@ -19,12 +19,6 @@
             <version>3.5.1</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.baomidou</groupId>-->
-<!--            <artifactId>mybatisplus-spring-boot-starter</artifactId>-->
-<!--            <version>1.0.5</version>-->
-<!--        </dependency>-->
-
         <!-- Druid -->
         <dependency>
             <groupId>com.alibaba</groupId>
