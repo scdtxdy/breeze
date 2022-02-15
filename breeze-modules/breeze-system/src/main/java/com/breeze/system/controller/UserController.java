@@ -1,7 +1,6 @@
 package com.breeze.system.controller;
 
 import com.baomidou.mybatisplus.autoconfigure.MybatisPlusPropertiesCustomizer;
-import com.breeze.commom.datasource.config.CustomIdGenerator;
 import com.breeze.common.core.constant.Contanttest;
 import com.breeze.common.core.utils.Testutil;
 import com.breeze.system.domain.User;
@@ -36,4 +35,13 @@ public class UserController {
         String a = Contanttest.a;
         return testutil.utilstest(a);
     }
+
+    @GetMapping("/test/remove")
+    public int remove() {
+        int result = userMapper.deleteById(1493210932884254723l);
+        System.out.println(String.valueOf(result));
+        return result;
+    }
+
+
 }
