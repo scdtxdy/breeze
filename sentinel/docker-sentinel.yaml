@@ -1,0 +1,23 @@
+# Compose 版本 Version 2支持更多的指令。Version 1将来会被弃用。
+version: "3"
+
+# 定义服务
+services:
+
+  # 为project定义服务
+  sentinel:
+    image: bladex/sentinel-dashboard:1.7.1
+    ports:
+      - 8858:8858
+    environment:
+      # 是否开启登录鉴权，仅用于日常测试，生产上不建议关闭, 默认true
+      auth.enabled: "true"
+      # 登录控制台的用户名，默认为 sentinel
+      sentinel.dashboard.auth.username: admin
+      # 登录控制台的密码，默认为 sentinel
+      sentinel.dashboard.auth.password: admin123
+      # 用于指定 Spring Boot 服务端 session 的过期时间，如 7200 表示 7200 秒；60m 表示 60 分钟，默认为 30 分钟；
+      server.servlet.session.timeout: 7200
+    restart: always
+    container_name: sentinel
+    privileged: true
