@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.breeze.storage.mapper.StorageMapper">
+  <resultMap id="BaseResultMap" type="com.breeze.storage.domain.Storage">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="product_name" jdbcType="VARCHAR" property="productName" />
+  </resultMap>
+  <select id="getById" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+        id, product_name
+    from storage
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+</mapper>

@@ -16,6 +16,7 @@
 
     <modules>
         <module>breeze-system</module>
+        <module>breeze-storage</module>
     </modules>
 
 
