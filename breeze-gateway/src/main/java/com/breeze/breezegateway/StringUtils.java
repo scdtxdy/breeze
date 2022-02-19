@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * 字符串工具类
  * 
- * @author ruoyi
+ * @author pupil
  */
 public class StringUtils {
     /** 空字符串 */

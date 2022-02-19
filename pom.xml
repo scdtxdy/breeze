@@ -15,6 +15,7 @@
         <module>breeze-gateway</module>
         <module>breeze-modules</module>
         <module>breeze-common</module>
+        <module>breeze-api</module>
     </modules>
     <packaging>pom</packaging>
     <properties>

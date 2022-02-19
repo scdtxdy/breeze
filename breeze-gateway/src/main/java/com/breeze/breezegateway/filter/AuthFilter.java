@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * 全局过滤器
  *
- * @author ruoyi
+ * @author pupil
  */
 @Component
 public class AuthFilter implements GlobalFilter, Ordered {
