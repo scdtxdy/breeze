@@ -9,10 +9,10 @@
     </parent>
 
     <groupId>com.breeze</groupId>
-    <artifactId>breeze-system-api</artifactId>
+    <artifactId>breeze-api-system</artifactId>
 
-    <name>breeze-system-api</name>
-    <description>breeze-system-api</description>
+    <name>breeze-api-system</name>
+    <description>breeze-api-system</description>
 
     <dependencies>
         <!-- Breeze Common Core-->
@@ -21,6 +21,4 @@
             <artifactId>breeze-common-core</artifactId>
         </dependency>
     </dependencies>
-
-
 </project>

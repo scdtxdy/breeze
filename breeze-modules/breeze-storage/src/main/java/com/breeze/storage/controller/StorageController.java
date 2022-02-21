@@ -1,5 +1,6 @@
 package com.breeze.storage.controller;
 
+import com.breeze.common.core.domain.R;
 import com.breeze.storage.domain.Storage;
 import com.breeze.storage.service.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,9 +23,9 @@ public class StorageController {
     }
 
     @GetMapping("/get")
-    public String getStorageProductName() {
+    public R<String> getStorageProductName() {
         Storage storage = storageService.getStorage();
-        return storage.getProductName();
+        return R.ok(storage.getProductName());
     }
 
 

@@ -11,7 +11,7 @@
     <groupId>com.breeze</groupId>
     <artifactId>breeze-storage</artifactId>
 
-    <name>breeze-system</name>
+    <name>breeze-storage</name>
     <description>breeze-storage</description>
 
     <dependencies>

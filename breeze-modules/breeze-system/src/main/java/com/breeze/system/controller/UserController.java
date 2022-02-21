@@ -1,9 +1,11 @@
 package com.breeze.system.controller;
 
-import com.baomidou.mybatisplus.autoconfigure.MybatisPlusPropertiesCustomizer;
+import com.breeze.api.storage.RemoteStorageService;
+import com.breeze.api.storage.domain.Storage;
 import com.breeze.common.core.constant.Contanttest;
+import com.breeze.common.core.domain.R;
 import com.breeze.common.core.utils.Testutil;
-import com.breeze.system.domain.User;
+
 import com.breeze.system.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +20,9 @@ public class UserController {
     private UserMapper userMapper;
 
     @Autowired
+    private RemoteStorageService remoteStorageService;
+
+    @Autowired
     private Testutil testutil;
     @GetMapping("/user")
     public String test() {
@@ -29,6 +34,9 @@ public class UserController {
 //        user.setNickname("zjx");
 //        userMapper.insert(user);
 //        Long id = user.getId();
+        R<String> data = remoteStorageService.getStorage();
+        String storage = data.getData();
+        System.out.println(storage);
         String a = Contanttest.a;
         return testutil.utilstest(a);
     }

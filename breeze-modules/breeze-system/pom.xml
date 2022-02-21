@@ -55,7 +55,9 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-
-
+        <dependency>
+            <groupId>com.breeze</groupId>
+            <artifactId>breeze-api-storage</artifactId>
+        </dependency>
     </dependencies>
 </project>

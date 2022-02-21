@@ -4,20 +4,21 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.breeze</groupId>
-        <artifactId>breeze</artifactId>
+        <artifactId>breeze-api</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <groupId>com.breeze</groupId>
-    <artifactId>breeze-api</artifactId>
-    <description>breeze-api</description>
+    <artifactId>breeze-api-storage</artifactId>
 
-    <packaging>pom</packaging>
+    <name>breeze-api-storage</name>
+    <description>breeze-api-storage</description>
 
-    <modules>
-        <module>breeze-api-storage</module>
-        <module>breeze-api-system</module>
-    </modules>
-
-
+    <dependencies>
+        <!-- Breeze Common Core-->
+        <dependency>
+            <groupId>com.breeze</groupId>
+            <artifactId>breeze-common-core</artifactId>
+        </dependency>
+    </dependencies>
 </project>

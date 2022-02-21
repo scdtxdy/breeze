@@ -82,6 +82,13 @@
                 <version>${breeze.version}</version>
             </dependency>
 
+            <!-- 系统接口 -->
+            <dependency>
+                <groupId>com.breeze</groupId>
+                <artifactId>breeze-api-storage</artifactId>
+                <version>${breeze.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
