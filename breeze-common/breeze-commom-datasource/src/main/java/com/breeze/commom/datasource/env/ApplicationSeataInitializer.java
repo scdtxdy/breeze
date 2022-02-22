@@ -1,4 +1,4 @@
-package com.breeze.commom.datasource.config.env;
+package com.breeze.commom.datasource.env;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.env.EnvironmentPostProcessor;

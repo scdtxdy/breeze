@@ -1,4 +1,4 @@
-package com.breeze.commom.datasource.config.config;
+package com.breeze.commom.datasource.config;
 
 import java.util.List;
 

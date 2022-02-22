@@ -1,4 +1,4 @@
-package com.breeze.commom.datasource.config.config;
+package com.breeze.commom.datasource.config;
 
 import com.baomidou.mybatisplus.core.incrementer.IdentifierGenerator;
 import org.apache.ibatis.reflection.MetaObject;

@@ -1,10 +1,10 @@
-package com.breeze.commom.datasource.config;
+package com.breeze.commom.datasource;
 
 import com.baomidou.mybatisplus.core.injector.AbstractMethod;
 import com.baomidou.mybatisplus.core.injector.DefaultSqlInjector;
 import com.baomidou.mybatisplus.core.metadata.TableInfo;
 import com.baomidou.mybatisplus.extension.injector.methods.LogicDeleteByIdWithFill;
-import com.breeze.commom.datasource.config.methods.MysqlInsertAllBatch;
+import com.breeze.commom.datasource.methods.MysqlInsertAllBatch;
 
 import java.util.List;
 

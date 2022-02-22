@@ -1,4 +1,4 @@
-package com.breeze.commom.datasource.config.methods;
+package com.breeze.commom.datasource.methods;
 
 import com.baomidou.mybatisplus.core.injector.AbstractMethod;
 import com.baomidou.mybatisplus.core.metadata.TableInfo;
