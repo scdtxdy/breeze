@@ -21,7 +21,7 @@ public class RemoteStorageFallbackFactory implements FallbackFactory<RemoteStora
         return new RemoteStorageService()
         {
             @Override
-            public R<Storage> addStorage() {
+            public R<String> addStorage() {
                 return R.fail("添加库存失败:" + throwable.getMessage());
             }
 

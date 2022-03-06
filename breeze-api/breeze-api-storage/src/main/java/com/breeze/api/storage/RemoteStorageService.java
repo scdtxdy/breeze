@@ -20,8 +20,8 @@ public interface RemoteStorageService
     /**
      * 添加库存
      */
-    @PostMapping(value = "/storage/add", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    R<Storage> addStorage();
+    @PostMapping(value = "/storage/add")
+    R<String> addStorage();
 
     /**
      * 获取库存数据

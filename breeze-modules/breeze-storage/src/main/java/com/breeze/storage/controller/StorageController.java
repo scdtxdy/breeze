@@ -17,9 +17,9 @@ public class StorageController {
     private StorageService storageService;
 
     @PostMapping("/add")
-    public String addStorage() {
+    public R<String> addStorage() {
         storageService.addStorage();
-        return "ok";
+        return R.ok("ok");
     }
 
     @GetMapping("/get")
